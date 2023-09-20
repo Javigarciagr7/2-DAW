@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es"> <!--modificado--> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Prueba inicial del 1º día"> <!--Añadido-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba inicial</title> <!--modificado-->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <h1>Página inicial</h1>
+    <h2>Otro título</h2>
+    <a href="contacto.html">Ir a contacto</a>
+    <br>
+    <br>
+    <button type="button" id="colorbtn">Cambio de color</button>
+   
+    <script>
+        function cambiarcolor(){
+            var nuevocolor ="#"+ Math.floor(Math.random()*16777215).toString(16);
+
+            document.body.style.backgroundColor = nuevocolor;
+        }
+
+        var botoncambiocolor = document.getElementById("colorbtn");
+        botoncambiocolor.addEventListener("click",cambiarcolor);
+    </script>
+</body>
+</html>
